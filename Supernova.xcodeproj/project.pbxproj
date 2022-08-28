@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		1D0D35552832C52F0075CBA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D35542832C52F0075CBA0 /* AppDelegate.swift */; };
 		1D0D35572832C52F0075CBA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D35562832C52F0075CBA0 /* SceneDelegate.swift */; };
-		1D0D35592832C52F0075CBA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D35582832C52F0075CBA0 /* ViewController.swift */; };
-		1D0D355C2832C52F0075CBA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D0D355A2832C52F0075CBA0 /* Main.storyboard */; };
+		1D0D35592832C52F0075CBA0 /* SpaceNewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D35582832C52F0075CBA0 /* SpaceNewsController.swift */; };
 		1D0D355E2832C5330075CBA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D0D355D2832C5330075CBA0 /* Assets.xcassets */; };
 		1D0D35612832C5330075CBA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D0D355F2832C5330075CBA0 /* LaunchScreen.storyboard */; };
+		1D189D0C2850DB36003A41A5 /* Network Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D189D0B2850DB36003A41A5 /* Network Manager.swift */; };
+		1D819D3C28B4280300BFEE8F /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D819D3B28B4280300BFEE8F /* NewsModel.swift */; };
+		1D819D3F28B42B3A00BFEE8F /* SpaceNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D819D3E28B42B3A00BFEE8F /* SpaceNewsView.swift */; };
+		1DCB6DB028B50849008E65F4 /* LargeSpaceNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCB6DAF28B50849008E65F4 /* LargeSpaceNewsCell.swift */; };
+		1DCB6DB328B508A2008E65F4 /* LargeSpaceNewsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCB6DB228B508A2008E65F4 /* LargeSpaceNewsCellView.swift */; };
+		1DDBE6A328B45B2D00E40271 /* SpaceNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDBE6A228B45B2D00E40271 /* SpaceNewsCell.swift */; };
+		1DDBE6A628B45CE600E40271 /* SpaceNewsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDBE6A528B45CE600E40271 /* SpaceNewsCellView.swift */; };
+		D0BEC1E634AD08A1C7C22771 /* Pods_Supernova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC5CE73C21A7BA96889A985 /* Pods_Supernova.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B432A6BB744AC85692A7354 /* Pods-Supernova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Supernova.release.xcconfig"; path = "Target Support Files/Pods-Supernova/Pods-Supernova.release.xcconfig"; sourceTree = "<group>"; };
+		0BC5CE73C21A7BA96889A985 /* Pods_Supernova.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Supernova.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D0D35512832C52F0075CBA0 /* Supernova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Supernova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D0D35542832C52F0075CBA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D0D35562832C52F0075CBA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1D0D35582832C52F0075CBA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1D0D355B2832C52F0075CBA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D0D35582832C52F0075CBA0 /* SpaceNewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsController.swift; sourceTree = "<group>"; };
 		1D0D355D2832C5330075CBA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D0D35602832C5330075CBA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D0D35622832C5330075CBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D189D0B2850DB36003A41A5 /* Network Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Manager.swift"; sourceTree = "<group>"; };
+		1D819D3B28B4280300BFEE8F /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		1D819D3E28B42B3A00BFEE8F /* SpaceNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsView.swift; sourceTree = "<group>"; };
+		1DCB6DAF28B50849008E65F4 /* LargeSpaceNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeSpaceNewsCell.swift; sourceTree = "<group>"; };
+		1DCB6DB228B508A2008E65F4 /* LargeSpaceNewsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeSpaceNewsCellView.swift; sourceTree = "<group>"; };
+		1DDBE6A228B45B2D00E40271 /* SpaceNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsCell.swift; sourceTree = "<group>"; };
+		1DDBE6A528B45CE600E40271 /* SpaceNewsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsCellView.swift; sourceTree = "<group>"; };
+		6C0DA33A7EABB69C6DCF8452 /* Pods-Supernova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Supernova.debug.xcconfig"; path = "Target Support Files/Pods-Supernova/Pods-Supernova.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BEC1E634AD08A1C7C22771 /* Pods_Supernova.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +59,8 @@
 			children = (
 				1D0D35532832C52F0075CBA0 /* Supernova */,
 				1D0D35522832C52F0075CBA0 /* Products */,
+				5F57CC6D2965C57A54F77B1B /* Pods */,
+				E6F4EA726B3884A33640EC98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +75,126 @@
 		1D0D35532832C52F0075CBA0 /* Supernova */ = {
 			isa = PBXGroup;
 			children = (
-				1D0D35542832C52F0075CBA0 /* AppDelegate.swift */,
-				1D0D35562832C52F0075CBA0 /* SceneDelegate.swift */,
-				1D0D35582832C52F0075CBA0 /* ViewController.swift */,
-				1D0D355A2832C52F0075CBA0 /* Main.storyboard */,
-				1D0D355D2832C5330075CBA0 /* Assets.xcassets */,
-				1D0D355F2832C5330075CBA0 /* LaunchScreen.storyboard */,
 				1D0D35622832C5330075CBA0 /* Info.plist */,
+				1D819D3A28B427B700BFEE8F /* AppDelegate */,
+				1D819D3928B427AC00BFEE8F /* Resources */,
+				1D0D356B2832C8310075CBA0 /* Model */,
+				1D0D35682832C5ED0075CBA0 /* Views */,
+				1D819D3D28B4290200BFEE8F /* Controller */,
 			);
 			path = Supernova;
+			sourceTree = "<group>";
+		};
+		1D0D35682832C5ED0075CBA0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1DCB6DAD28B50808008E65F4 /* CellsView */,
+				1D819D3E28B42B3A00BFEE8F /* SpaceNewsView.swift */,
+				1D0D355F2832C5330075CBA0 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1D0D356B2832C8310075CBA0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1D189D0B2850DB36003A41A5 /* Network Manager.swift */,
+				1D819D3B28B4280300BFEE8F /* NewsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1D819D3928B427AC00BFEE8F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1D0D355D2832C5330075CBA0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1D819D3A28B427B700BFEE8F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1D0D35542832C52F0075CBA0 /* AppDelegate.swift */,
+				1D0D35562832C52F0075CBA0 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1D819D3D28B4290200BFEE8F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1DCB6DAC28B507FD008E65F4 /* Cells */,
+				1D0D35582832C52F0075CBA0 /* SpaceNewsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1DCB6DAC28B507FD008E65F4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1DCB6DAE28B5081D008E65F4 /* LargeSpaceNewsCell */,
+				1DDBE6A128B45B1000E40271 /* SpaceNewsCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1DCB6DAD28B50808008E65F4 /* CellsView */ = {
+			isa = PBXGroup;
+			children = (
+				1DCB6DB128B50880008E65F4 /* LargeSpaceNewsCellView */,
+				1DDBE6A428B45CCB00E40271 /* SpaceNewsCellView */,
+			);
+			path = CellsView;
+			sourceTree = "<group>";
+		};
+		1DCB6DAE28B5081D008E65F4 /* LargeSpaceNewsCell */ = {
+			isa = PBXGroup;
+			children = (
+				1DCB6DAF28B50849008E65F4 /* LargeSpaceNewsCell.swift */,
+			);
+			path = LargeSpaceNewsCell;
+			sourceTree = "<group>";
+		};
+		1DCB6DB128B50880008E65F4 /* LargeSpaceNewsCellView */ = {
+			isa = PBXGroup;
+			children = (
+				1DCB6DB228B508A2008E65F4 /* LargeSpaceNewsCellView.swift */,
+			);
+			path = LargeSpaceNewsCellView;
+			sourceTree = "<group>";
+		};
+		1DDBE6A128B45B1000E40271 /* SpaceNewsCell */ = {
+			isa = PBXGroup;
+			children = (
+				1DDBE6A228B45B2D00E40271 /* SpaceNewsCell.swift */,
+			);
+			path = SpaceNewsCell;
+			sourceTree = "<group>";
+		};
+		1DDBE6A428B45CCB00E40271 /* SpaceNewsCellView */ = {
+			isa = PBXGroup;
+			children = (
+				1DDBE6A528B45CE600E40271 /* SpaceNewsCellView.swift */,
+			);
+			path = SpaceNewsCellView;
+			sourceTree = "<group>";
+		};
+		5F57CC6D2965C57A54F77B1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C0DA33A7EABB69C6DCF8452 /* Pods-Supernova.debug.xcconfig */,
+				0B432A6BB744AC85692A7354 /* Pods-Supernova.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E6F4EA726B3884A33640EC98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BC5CE73C21A7BA96889A985 /* Pods_Supernova.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D0D35652832C5330075CBA0 /* Build configuration list for PBXNativeTarget "Supernova" */;
 			buildPhases = (
+				44301179B51D426492D59337 /* [CP] Check Pods Manifest.lock */,
 				1D0D354D2832C52F0075CBA0 /* Sources */,
 				1D0D354E2832C52F0075CBA0 /* Frameworks */,
 				1D0D354F2832C52F0075CBA0 /* Resources */,
+				92C21A9B93107A563DF0AB80 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +259,74 @@
 			files = (
 				1D0D35612832C5330075CBA0 /* LaunchScreen.storyboard in Resources */,
 				1D0D355E2832C5330075CBA0 /* Assets.xcassets in Resources */,
-				1D0D355C2832C52F0075CBA0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44301179B51D426492D59337 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Supernova-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92C21A9B93107A563DF0AB80 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Supernova/Pods-Supernova-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Supernova/Pods-Supernova-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Supernova/Pods-Supernova-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D0D354D2832C52F0075CBA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D0D35592832C52F0075CBA0 /* ViewController.swift in Sources */,
+				1D189D0C2850DB36003A41A5 /* Network Manager.swift in Sources */,
+				1D0D35592832C52F0075CBA0 /* SpaceNewsController.swift in Sources */,
+				1D819D3F28B42B3A00BFEE8F /* SpaceNewsView.swift in Sources */,
 				1D0D35552832C52F0075CBA0 /* AppDelegate.swift in Sources */,
 				1D0D35572832C52F0075CBA0 /* SceneDelegate.swift in Sources */,
+				1D819D3C28B4280300BFEE8F /* NewsModel.swift in Sources */,
+				1DCB6DB328B508A2008E65F4 /* LargeSpaceNewsCellView.swift in Sources */,
+				1DCB6DB028B50849008E65F4 /* LargeSpaceNewsCell.swift in Sources */,
+				1DDBE6A628B45CE600E40271 /* SpaceNewsCellView.swift in Sources */,
+				1DDBE6A328B45B2D00E40271 /* SpaceNewsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1D0D355A2832C52F0075CBA0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1D0D355B2832C52F0075CBA0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1D0D355F2832C5330075CBA0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +454,7 @@
 		};
 		1D0D35662832C5330075CBA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C0DA33A7EABB69C6DCF8452 /* Pods-Supernova.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +483,7 @@
 		};
 		1D0D35672832C5330075CBA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B432A6BB744AC85692A7354 /* Pods-Supernova.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
