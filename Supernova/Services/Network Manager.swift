@@ -1,11 +1,7 @@
 import Foundation
 
 class NetworkManager {
-    
-    static let shared = NetworkManager()
-    
-    private init() {}
-    
+        
     func getNews(completion: @escaping ([SpaceflightElement]?, Error?) -> Void) {
         guard let url = URL(string: "https://api.spaceflightnewsapi.net/v3/blogs") else {return}
         let session = URLSession.shared

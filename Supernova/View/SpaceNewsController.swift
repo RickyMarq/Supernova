@@ -3,8 +3,7 @@ import UIKit
 class SpaceNewsController: UIViewController {
     
     var spaceNewsView: SpaceNewsView?
-    var Objc = [SpaceflightElement]()
-   
+    var viewModel: SpaceNewsViewModel?
     
     override func loadView() {
         self.spaceNewsView = SpaceNewsView()
@@ -14,6 +13,7 @@ class SpaceNewsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.spaceNewsView?.setUpNewsTableViewProtocols(delegate: self, dataSource: self)
+        self.viewModel = SpaceNewsViewModel(delegate: self)
         self.setUpNavigationController()
         self.setUpNews()
     }
@@ -24,30 +24,24 @@ class SpaceNewsController: UIViewController {
     }
     
     private func setUpNews() {
-        NetworkManager.shared.getNews { news, error in
-            self.Objc.append(contentsOf: news!)
-            DispatchQueue.main.async {
-                self.spaceNewsView?.newsTableView.reloadData()
-                self.spaceNewsView?.activity.stopAnimating()
-            }
-        }
+        self.viewModel?.getData()
     }
 }
 
 extension SpaceNewsController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Objc.count
+        return self.viewModel?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
-            let ob = Objc[indexPath.row]
+            let ob = self.viewModel?.getDataIndex(indexPath: indexPath)
             let largeCell: LargeSpaceNewsCell? = tableView.dequeueReusableCell(withIdentifier: LargeSpaceNewsCell.identifier, for: indexPath) as? LargeSpaceNewsCell
-            largeCell?.titleNewsLabel.text = ob.title
+            largeCell?.titleNewsLabel.text = ob?.title
             
             DispatchQueue.global().async {
-                if let image = URL(string: ob.imageUrl ?? "Error") {
+                if let image = URL(string: ob?.imageUrl ?? "Error") {
                     do {
                         let data = try Data(contentsOf: image)
                         let img = UIImage(data: data)
@@ -63,11 +57,11 @@ extension SpaceNewsController: UITableViewDelegate, UITableViewDataSource {
             return largeCell ?? UITableViewCell()
         }
         let cell: SpaceNewsCell? = tableView.dequeueReusableCell(withIdentifier: SpaceNewsCell.identifier, for: indexPath) as? SpaceNewsCell
-        let ob = Objc[indexPath.row]
-        cell?.spaceNewsCellView.titleNewsLabel.text = ob.title
+        let ob = self.viewModel?.getDataIndex(indexPath: indexPath)
+        cell?.spaceNewsCellView.titleNewsLabel.text = ob?.title
         
         DispatchQueue.global().async {
-            if let image = URL(string: ob.imageUrl ?? "Error") {
+            if let image = URL(string: ob?.imageUrl ?? "Error") {
                 do {
                     let data = try Data(contentsOf: image)
                     let img = UIImage(data: data)
@@ -94,6 +88,20 @@ extension SpaceNewsController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+}
+
+extension SpaceNewsController: SpaceNewsViewModelProtocols {
+    
+    func success() {
+        DispatchQueue.main.async {
+            self.spaceNewsView?.newsTableView.reloadData()
+        }
+    }
+    
+    func failure() {
+        print("Erro camada mais alta")
     }
     
     

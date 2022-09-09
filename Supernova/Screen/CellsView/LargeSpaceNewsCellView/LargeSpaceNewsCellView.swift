@@ -56,8 +56,6 @@ class LargeSpaceNewsCellView: UIView {
             self.imageNewsImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30),
             self.imageNewsImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30),
             self.imageNewsImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 20),
-//            self.imageNewsImageView.widthAnchor.constraint(equalToConstant: 50),
-//            self.imageNewsImageView.heightAnchor.constraint(equalToConstant: 50),
             
         ])
     }

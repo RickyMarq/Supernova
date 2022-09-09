@@ -14,8 +14,8 @@
             filePath = "Supernova/Model/Network Manager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
             landmarkName = "getNews(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "Supernova/Model/Network Manager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
             landmarkName = "getNews(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "Supernova/Model/Network Manager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
             landmarkName = "getNews(completion:)"
             landmarkType = "7">
             <Locations>
@@ -94,8 +94,8 @@
             filePath = "Supernova/Model/Network Manager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
             landmarkName = "getNews(completion:)"
             landmarkType = "7">
          </BreakpointContent>
