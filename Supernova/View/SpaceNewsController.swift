@@ -2,11 +2,11 @@ import UIKit
 
 class SpaceNewsController: UIViewController {
     
-    var spaceNewsView: SpaceNewsView?
+    var spaceNewsView: SpaceNewsScreen?
     var viewModel: SpaceNewsViewModel?
     
     override func loadView() {
-        self.spaceNewsView = SpaceNewsView()
+        self.spaceNewsView = SpaceNewsScreen()
         self.view = spaceNewsView
     }
 
@@ -19,7 +19,7 @@ class SpaceNewsController: UIViewController {
     }
     
     private func setUpNavigationController() {
-        self.title = "Supernova"
+        self.title = "Supernova 💫"
         self.navigationController?.navigationBar.prefersLargeTitles = true
     }
     
@@ -36,45 +36,12 @@ extension SpaceNewsController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
-            let ob = self.viewModel?.getDataIndex(indexPath: indexPath)
             let largeCell: LargeSpaceNewsCell? = tableView.dequeueReusableCell(withIdentifier: LargeSpaceNewsCell.identifier, for: indexPath) as? LargeSpaceNewsCell
-            largeCell?.titleNewsLabel.text = ob?.title
-            
-            DispatchQueue.global().async {
-                if let image = URL(string: ob?.imageUrl ?? "Error") {
-                    do {
-                        let data = try Data(contentsOf: image)
-                        let img = UIImage(data: data)
-                        DispatchQueue.main.async {
-                            largeCell?.imageNewsImageView.image = img
-                        }
-                    } catch {
-                        print("Erro imagem")
-                    }
-                }
-            }
-            
+            largeCell?.prepareLargeSpaceCell(model: (self.viewModel?.getDataIndex(indexPath: indexPath))!)
             return largeCell ?? UITableViewCell()
         }
         let cell: SpaceNewsCell? = tableView.dequeueReusableCell(withIdentifier: SpaceNewsCell.identifier, for: indexPath) as? SpaceNewsCell
-        let ob = self.viewModel?.getDataIndex(indexPath: indexPath)
-        cell?.spaceNewsCellView.titleNewsLabel.text = ob?.title
-        
-        DispatchQueue.global().async {
-            if let image = URL(string: ob?.imageUrl ?? "Error") {
-                do {
-                    let data = try Data(contentsOf: image)
-                    let img = UIImage(data: data)
-                    DispatchQueue.main.async {
-                        cell?.spaceNewsCellView.imageNewsImageView.image = img
-                    }
-                } catch {
-                    print("Erro imagem")
-                }
-            }
-        }
-
-        cell?.backgroundColor = .black
+        cell?.prepareSpaceCell(model: (self.viewModel?.getDataIndex(indexPath: indexPath))!)
         return cell ?? UITableViewCell()
     }
     
@@ -82,14 +49,12 @@ extension SpaceNewsController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.row == 0 {
             return 300
         }
-        
         return 150
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
 }
 
 extension SpaceNewsController: SpaceNewsViewModelProtocols {
@@ -103,6 +68,4 @@ extension SpaceNewsController: SpaceNewsViewModelProtocols {
     func failure() {
         print("Erro camada mais alta")
     }
-    
-    
 }

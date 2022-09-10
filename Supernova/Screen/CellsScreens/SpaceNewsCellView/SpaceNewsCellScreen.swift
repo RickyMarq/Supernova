@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SpaceNewsCellView: UIView {
+class SpaceNewsCellScreen: UIView {
     
     lazy var imageNewsImageView: UIImageView = {
         let defaultImage = UIImage(named: "loading")
@@ -20,11 +20,22 @@ class SpaceNewsCellView: UIView {
     
     lazy var titleNewsLabel: UILabel = {
         let label = UILabel()
-        label.text = "Teste"
+        label.text = "Error"
         label.textAlignment = .left
         label.textColor = .white
         label.numberOfLines = 5
         label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    lazy var descriptionNewsLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Error"
+        label.textAlignment = .left
+        label.numberOfLines = 4
+        label.textColor = .gray
+        label.font = UIFont.systemFont(ofSize: 11)
         return label
     }()
 
@@ -32,11 +43,13 @@ class SpaceNewsCellView: UIView {
     private func setUpUIElements() {
         self.addSubview(self.titleNewsLabel)
         self.addSubview(self.imageNewsImageView)
+        self.addSubview(self.descriptionNewsLabel)
     }
     
     private func setUpConstraints() {
         self.setUpTitleNewsLabelConstraints()
         self.setUpImageNewsImageViewConstraints()
+        self.setUpSummaryNewsLabelConstraints()
     }
     
     override init(frame: CGRect) {
@@ -60,10 +73,20 @@ class SpaceNewsCellView: UIView {
     
     private func setUpTitleNewsLabelConstraints() {
         self.titleNewsLabel.snp.makeConstraints { make in
-            make.top.equalTo(self.imageNewsImageView.snp.top)
-            make.left.equalTo(self.imageNewsImageView.snp.right).offset(30)
+            make.top.equalTo(self.imageNewsImageView.snp.top).offset(-25)
+            make.left.equalTo(self.imageNewsImageView.snp.right).offset(15)
             make.height.equalTo(100)
-            make.width.equalTo(200)
+            make.width.equalTo(250)
+        }
+    }
+    
+    private func setUpSummaryNewsLabelConstraints() {
+        self.descriptionNewsLabel.snp.makeConstraints { make in
+            make.top.equalTo(self.titleNewsLabel.snp.top).offset(50)
+            make.left.equalTo(self.titleNewsLabel.snp.left)
+            make.height.equalTo(100)
+            make.width.equalTo(270)
+
         }
     }
 }

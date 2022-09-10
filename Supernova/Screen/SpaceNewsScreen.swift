@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class SpaceNewsView: UIView {
+class SpaceNewsScreen: UIView {
 
     lazy var newsTableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
@@ -20,7 +20,7 @@ class SpaceNewsView: UIView {
     }()
     
     lazy var activity: UIActivityIndicatorView = {
-        let activity = UIActivityIndicatorView(style: .whiteLarge)
+        let activity = UIActivityIndicatorView(style: .large)
         activity.hidesWhenStopped = true
         activity.startAnimating()
         return activity

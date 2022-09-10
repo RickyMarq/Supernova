@@ -14,13 +14,13 @@
 		1D0D35612832C5330075CBA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D0D355F2832C5330075CBA0 /* LaunchScreen.storyboard */; };
 		1D189D0C2850DB36003A41A5 /* Network Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D189D0B2850DB36003A41A5 /* Network Manager.swift */; };
 		1D819D3C28B4280300BFEE8F /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D819D3B28B4280300BFEE8F /* NewsModel.swift */; };
-		1D819D3F28B42B3A00BFEE8F /* SpaceNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D819D3E28B42B3A00BFEE8F /* SpaceNewsView.swift */; };
+		1D819D3F28B42B3A00BFEE8F /* SpaceNewsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D819D3E28B42B3A00BFEE8F /* SpaceNewsScreen.swift */; };
 		1DAC3FD428CBECE600217BB3 /* SpaceNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC3FD328CBECE600217BB3 /* SpaceNewsViewModel.swift */; };
 		1DAC3FD728CBF03900217BB3 /* SpaceNewsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC3FD628CBF03900217BB3 /* SpaceNewsCellViewModel.swift */; };
+		1DAC3FD928CBF80500217BB3 /* SpaceNewsLargeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC3FD828CBF80500217BB3 /* SpaceNewsLargeCellViewModel.swift */; };
 		1DCB6DB028B50849008E65F4 /* LargeSpaceNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCB6DAF28B50849008E65F4 /* LargeSpaceNewsCell.swift */; };
-		1DCB6DB328B508A2008E65F4 /* LargeSpaceNewsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCB6DB228B508A2008E65F4 /* LargeSpaceNewsCellView.swift */; };
 		1DDBE6A328B45B2D00E40271 /* SpaceNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDBE6A228B45B2D00E40271 /* SpaceNewsCell.swift */; };
-		1DDBE6A628B45CE600E40271 /* SpaceNewsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDBE6A528B45CE600E40271 /* SpaceNewsCellView.swift */; };
+		1DDBE6A628B45CE600E40271 /* SpaceNewsCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDBE6A528B45CE600E40271 /* SpaceNewsCellScreen.swift */; };
 		D0BEC1E634AD08A1C7C22771 /* Pods_Supernova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC5CE73C21A7BA96889A985 /* Pods_Supernova.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,13 +36,13 @@
 		1D0D35622832C5330075CBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D189D0B2850DB36003A41A5 /* Network Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Manager.swift"; sourceTree = "<group>"; };
 		1D819D3B28B4280300BFEE8F /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
-		1D819D3E28B42B3A00BFEE8F /* SpaceNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsView.swift; sourceTree = "<group>"; };
+		1D819D3E28B42B3A00BFEE8F /* SpaceNewsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsScreen.swift; sourceTree = "<group>"; };
 		1DAC3FD328CBECE600217BB3 /* SpaceNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsViewModel.swift; sourceTree = "<group>"; };
 		1DAC3FD628CBF03900217BB3 /* SpaceNewsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsCellViewModel.swift; sourceTree = "<group>"; };
+		1DAC3FD828CBF80500217BB3 /* SpaceNewsLargeCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsLargeCellViewModel.swift; sourceTree = "<group>"; };
 		1DCB6DAF28B50849008E65F4 /* LargeSpaceNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeSpaceNewsCell.swift; sourceTree = "<group>"; };
-		1DCB6DB228B508A2008E65F4 /* LargeSpaceNewsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeSpaceNewsCellView.swift; sourceTree = "<group>"; };
 		1DDBE6A228B45B2D00E40271 /* SpaceNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsCell.swift; sourceTree = "<group>"; };
-		1DDBE6A528B45CE600E40271 /* SpaceNewsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsCellView.swift; sourceTree = "<group>"; };
+		1DDBE6A528B45CE600E40271 /* SpaceNewsCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceNewsCellScreen.swift; sourceTree = "<group>"; };
 		6C0DA33A7EABB69C6DCF8452 /* Pods-Supernova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Supernova.debug.xcconfig"; path = "Target Support Files/Pods-Supernova/Pods-Supernova.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,8 +94,8 @@
 		1D0D35682832C5ED0075CBA0 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				1DCB6DAD28B50808008E65F4 /* CellsView */,
-				1D819D3E28B42B3A00BFEE8F /* SpaceNewsView.swift */,
+				1DCB6DAD28B50808008E65F4 /* CellsScreens */,
+				1D819D3E28B42B3A00BFEE8F /* SpaceNewsScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -129,8 +129,8 @@
 		1D819D3D28B4290200BFEE8F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1DCB6DAC28B507FD008E65F4 /* Cells */,
 				1D0D35582832C52F0075CBA0 /* SpaceNewsController.swift */,
+				1DCB6DAC28B507FD008E65F4 /* Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -140,6 +140,7 @@
 			children = (
 				1DAC3FD328CBECE600217BB3 /* SpaceNewsViewModel.swift */,
 				1DAC3FD628CBF03900217BB3 /* SpaceNewsCellViewModel.swift */,
+				1DAC3FD828CBF80500217BB3 /* SpaceNewsLargeCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -155,49 +156,24 @@
 		1DCB6DAC28B507FD008E65F4 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				1DCB6DAE28B5081D008E65F4 /* LargeSpaceNewsCell */,
-				1DDBE6A128B45B1000E40271 /* SpaceNewsCell */,
+				1DCB6DAF28B50849008E65F4 /* LargeSpaceNewsCell.swift */,
+				1DDBE6A228B45B2D00E40271 /* SpaceNewsCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		1DCB6DAD28B50808008E65F4 /* CellsView */ = {
+		1DCB6DAD28B50808008E65F4 /* CellsScreens */ = {
 			isa = PBXGroup;
 			children = (
-				1DCB6DB128B50880008E65F4 /* LargeSpaceNewsCellView */,
 				1DDBE6A428B45CCB00E40271 /* SpaceNewsCellView */,
 			);
-			path = CellsView;
-			sourceTree = "<group>";
-		};
-		1DCB6DAE28B5081D008E65F4 /* LargeSpaceNewsCell */ = {
-			isa = PBXGroup;
-			children = (
-				1DCB6DAF28B50849008E65F4 /* LargeSpaceNewsCell.swift */,
-			);
-			path = LargeSpaceNewsCell;
-			sourceTree = "<group>";
-		};
-		1DCB6DB128B50880008E65F4 /* LargeSpaceNewsCellView */ = {
-			isa = PBXGroup;
-			children = (
-				1DCB6DB228B508A2008E65F4 /* LargeSpaceNewsCellView.swift */,
-			);
-			path = LargeSpaceNewsCellView;
-			sourceTree = "<group>";
-		};
-		1DDBE6A128B45B1000E40271 /* SpaceNewsCell */ = {
-			isa = PBXGroup;
-			children = (
-				1DDBE6A228B45B2D00E40271 /* SpaceNewsCell.swift */,
-			);
-			path = SpaceNewsCell;
+			path = CellsScreens;
 			sourceTree = "<group>";
 		};
 		1DDBE6A428B45CCB00E40271 /* SpaceNewsCellView */ = {
 			isa = PBXGroup;
 			children = (
-				1DDBE6A528B45CE600E40271 /* SpaceNewsCellView.swift */,
+				1DDBE6A528B45CE600E40271 /* SpaceNewsCellScreen.swift */,
 			);
 			path = SpaceNewsCellView;
 			sourceTree = "<group>";
@@ -333,17 +309,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DAC3FD928CBF80500217BB3 /* SpaceNewsLargeCellViewModel.swift in Sources */,
 				1DAC3FD728CBF03900217BB3 /* SpaceNewsCellViewModel.swift in Sources */,
 				1D189D0C2850DB36003A41A5 /* Network Manager.swift in Sources */,
 				1D0D35592832C52F0075CBA0 /* SpaceNewsController.swift in Sources */,
-				1D819D3F28B42B3A00BFEE8F /* SpaceNewsView.swift in Sources */,
+				1D819D3F28B42B3A00BFEE8F /* SpaceNewsScreen.swift in Sources */,
 				1DAC3FD428CBECE600217BB3 /* SpaceNewsViewModel.swift in Sources */,
 				1D0D35552832C52F0075CBA0 /* AppDelegate.swift in Sources */,
 				1D0D35572832C52F0075CBA0 /* SceneDelegate.swift in Sources */,
 				1D819D3C28B4280300BFEE8F /* NewsModel.swift in Sources */,
-				1DCB6DB328B508A2008E65F4 /* LargeSpaceNewsCellView.swift in Sources */,
 				1DCB6DB028B50849008E65F4 /* LargeSpaceNewsCell.swift in Sources */,
-				1DDBE6A628B45CE600E40271 /* SpaceNewsCellView.swift in Sources */,
+				1DDBE6A628B45CE600E40271 /* SpaceNewsCellScreen.swift in Sources */,
 				1DDBE6A328B45B2D00E40271 /* SpaceNewsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

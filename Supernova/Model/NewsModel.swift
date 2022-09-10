@@ -11,4 +11,5 @@ struct SpaceflightElement: Codable {
     let id: Int?
     let title: String?
     let imageUrl: String?
+    let summary: String?
 }
